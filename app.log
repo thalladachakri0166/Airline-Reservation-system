@@ -1,0 +1,51 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.12)
+
+2025-11-06 19:38:27.027  INFO 17016 --- [           main] .c.A.AirlineReservationSystemApplication : Starting AirlineReservationSystemApplication v0.0.1-SNAPSHOT using Java 21.0.9 on LAPTOP-226HALK1 with PID 17016 (C:\Users\Thall\Downloads\AirlineReservationSystem-main\AirlineReservationSystem-main\target\AirlineReservationSystem-0.0.1-SNAPSHOT.jar started by Thall in C:\Users\Thall\Downloads\AirlineReservationSystem-main\AirlineReservationSystem-main)
+2025-11-06 19:38:27.029  INFO 17016 --- [           main] .c.A.AirlineReservationSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2025-11-06 19:38:27.699  INFO 17016 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-06 19:38:27.760  INFO 17016 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2025-11-06 19:38:28.505  INFO 17016 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2025-11-06 19:38:28.517  INFO 17016 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-06 19:38:28.517  INFO 17016 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2025-11-06 19:38:28.592  INFO 17016 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-06 19:38:28.593  INFO 17016 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1509 ms
+2025-11-06 19:38:28.788  INFO 17016 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-06 19:38:28.849  INFO 17016 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-11-06 19:38:29.013  INFO 17016 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-11-06 19:38:29.100  INFO 17016 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-06 19:38:29.477  INFO 17016 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-06 19:38:29.505  INFO 17016 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-11-06 19:38:29.757  WARN 17016 --- [           main] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2025-11-06 19:38:30.336  INFO 17016 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-11-06 19:38:30.347  INFO 17016 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 19:38:30.845  WARN 17016 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-06 19:38:31.186  WARN 17016 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8181 is already in use
+2025-11-06 19:38:31.186  INFO 17016 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-06 19:38:31.186  INFO 17016 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-11-06 19:38:31.198  INFO 17016 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-06 19:38:31.198  INFO 17016 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-06 19:38:31.198  INFO 17016 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-06 19:38:31.212  INFO 17016 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-11-06 19:38:31.233 ERROR 17016 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8181 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8181 or configure this application to listen on another port.
+
